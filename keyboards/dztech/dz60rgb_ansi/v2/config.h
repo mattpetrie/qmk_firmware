@@ -46,6 +46,10 @@
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED true  // turn off effects when suspended
 #    define RGB_MATRIX_KEYPRESSES
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#    define DISABLE_RGB_MATRIX_DIGITAL_RAIN
+#    define DISABLE_RGB_MATRIX_DUAL_BEACON
+#    define DISABLE_RGB_MATRIX_CYCLE_OUT_IN_DUAL
+#    define DISABLE_RGB_MATRIX_RAINBOW_PINWHEELS
 #    define DRIVER_ADDR_1 0b1010000
 #    define DRIVER_ADDR_2 0b1010000  // this is here for compliancy reasons.
 #    define DRIVER_COUNT 2
