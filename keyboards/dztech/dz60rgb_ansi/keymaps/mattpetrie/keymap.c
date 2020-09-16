@@ -9,17 +9,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case VSCODE_TOGGLE_TERMINAL:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(KC_LCTRL) "`" SS_UP(KC_LCTRL));
+                SEND_STRING(SS_DOWN(X_LCTRL) "`" SS_UP(X_LCTRL));
             }
             break;
         case VSCODE_NEW_TERMINAL:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(KC_LSHIFT) SS_DOWN(KC_LCTRL) "`" SS_UP(KC_LSHIFT) SS_UP(KC_LCTRL));
+                SEND_STRING(SS_DOWN(X_LSHIFT) SS_DOWN(X_LCTRL) "`" SS_UP(X_LSHIFT) SS_UP(X_LCTRL));
             }
             break;
     }
     return true;
-}
 }
 
 /* THIS FILE WAS GENERATED!
