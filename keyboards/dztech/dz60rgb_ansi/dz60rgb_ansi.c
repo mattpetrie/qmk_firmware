@@ -110,20 +110,54 @@ void rgb_matrix_indicators_user(void) {
     if (layer_state_is(1)) {
         /* Set `/~ to green/ */
         rgb_matrix_set_color(13, 0x00, 0xFF, 0x00);
-        /* Set WASD arrow keys to magenta. */
-        rgb_matrix_set_color(25, 0xFF, 0x00, 0xFF);
-        rgb_matrix_set_color(37, 0xFF, 0x00, 0xFF);
-        rgb_matrix_set_color(38, 0xFF, 0x00, 0xFF);
-        rgb_matrix_set_color(39, 0xFF, 0x00, 0xFF);
-        /* Set media controls to teal. */
-        rgb_matrix_set_color(41, 0x00, 0x80, 0x80);
-        rgb_matrix_set_color(48, 0x00, 0x80, 0x80);
-        rgb_matrix_set_color(49, 0x00, 0x80, 0x80);
-        rgb_matrix_set_color(50, 0x00, 0x80, 0x80);
-        rgb_matrix_set_color(51, 0x00, 0x80, 0x80);
-        rgb_matrix_set_color(52, 0x00, 0x80, 0x80);
-        /* Set Esc (mapped to lower right corner) to red. */
-        rgb_matrix_set_color(53, 0xFF, 0x00, 0x00);
+        /* Set WASD arrow keys to red */
+        rgb_matrix_set_color(25, 0xFF, 0x00, 0x00);
+        rgb_matrix_set_color(37, 0xFF, 0x00, 0x00);
+        rgb_matrix_set_color(38, 0xFF, 0x00, 0x00);
+        rgb_matrix_set_color(39, 0xFF, 0x00, 0x00);
+        /* Set media controls to blue */
+        rgb_matrix_set_color(41, 0x00, 0x00, 0xFF);
+        rgb_matrix_set_color(48, 0x00, 0x00, 0xFF);
+        rgb_matrix_set_color(49, 0x00, 0x00, 0xFF);
+        rgb_matrix_set_color(50, 0x00, 0x00, 0xFF);
+        rgb_matrix_set_color(51, 0x00, 0x00, 0xFF);
+        rgb_matrix_set_color(52, 0x00, 0x00, 0xFF);
+        /* Set Esc (mapped to lower right corner) to yellow */
+        rgb_matrix_set_color(53, 0xFF, 0xFF, 0x00);
+    }
+    /* RGB controls layer */
+    if (layer_state_is(2)) {
+        /* White for RGB toggle */
+        rgb_matrix_set_color(26, 0xFF, 0xFF, 0xFF);
+        /* Red for Hue + */
+        rgb_matrix_set_color(24, 0xFF, 0x00, 0x00);
+        /* Blue for Hue - */
+        rgb_matrix_set_color(23, 0x00, 0x00, 0xFF);
+        /* Purple for Saturation + */
+        rgb_matrix_set_color(22, 0x7A, 0x00, 0xFF);
+        /* Pink for Saturation - */
+        rgb_matrix_set_color(21, 0xFF, 0x80, 0xBF);
+        /* White for Brightness + */
+        rgb_matrix_set_color(20, 0xFF, 0xFF, 0xFF);
+        /* Nothing for Brightness - :) */
+        /* Orange for Mode + */
+        rgb_matrix_set_color(18, 0xFF, 0x80, 0x00);
+        /* Turquoise for Mode - */
+        rgb_matrix_set_color(17, 0x47, 0x6E, 0x6A);
+        /* Coral for Effect + */
+        rgb_matrix_set_color(16, 0xFF, 0x7C, 0x4D);
+        /* SpringGreen for Effect - */
+        rgb_matrix_set_color(15, 0x00, 0xFF, 0x80);
+        /* Gold for bottom row effect switches */
+        rgb_matrix_set_color(51, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(50, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(49, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(48, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(47, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(46, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(45, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(44, 0xFF, 0xD9, 0x00);
+        rgb_matrix_set_color(43, 0xFF, 0xD9, 0x00);
     }
     /* Mouse controls layer */
     if (layer_state_is(3)) {
@@ -150,6 +184,9 @@ void rgb_matrix_indicators_user(void) {
         rgb_matrix_set_color(12, 0xFF, 0x00, 0x00);
         rgb_matrix_set_color(11, 0xFF, 0xFF, 0x00);
         rgb_matrix_set_color(10, 0x00, 0xFF, 0x00);
+        /* Set VSCode shortcuts blue */
+        rgb_matrix_set_color(42, 0x00, 0x00, 0xFF);
+        rgb_matrix_set_color(43, 0x00, 0x00, 0xFF);
     }
 }
 #endif
