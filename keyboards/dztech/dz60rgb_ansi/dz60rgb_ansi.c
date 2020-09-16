@@ -133,17 +133,17 @@ void rgb_matrix_indicators_user(void) {
         rgb_matrix_set_color(24, 0xFF, 0x00, 0x00);
         /* Blue for Hue - */
         rgb_matrix_set_color(23, 0x00, 0x00, 0xFF);
-        /* Orange for Saturation + */
-        rgb_matrix_set_color(22, 0xFF, 0x80, 0x00);
-        /* Yellow for Saturation - */
-        rgb_matrix_set_color(21, 0xFF, 0xFF, 0x00);
-        /* White for Brightness + */
-        rgb_matrix_set_color(20, 0xFF, 0xFF, 0xFF);
+        /* Purple for Saturation + */
+        rgb_matrix_set_color(22, 0x7A, 0x00, 0xFF);
+        /* Pink for Saturation - */
+        rgb_matrix_set_color(21, 0xFF, 0x80, 0xBF);
+        /* Azure for Brightness + (this actually looks more white than "White" to me) */
+        rgb_matrix_set_color(20, 0x99, 0xf5, 0xFF);
         /* Nothing for Brightness - :) */
-        /* Purple for Mode + */
-        rgb_matrix_set_color(18, 0x7A, 0x00, 0xFF);
-        /* Azure for Mode - */
-        rgb_matrix_set_color(17, 0x99, 0xf5, 0xFF);
+        /* Magenta for Mode + */
+        rgb_matrix_set_color(18, 0xFF, 0x00, 0xFF);
+        /* Cyan for Mode - */
+        rgb_matrix_set_color(17, 0x00, 0xFF, 0xFF);
         /* Green for Effect + */
         rgb_matrix_set_color(16, 0x00, 0xFF, 0x00);
         /* Red for Effect - */
