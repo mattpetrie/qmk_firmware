@@ -133,21 +133,21 @@ void rgb_matrix_indicators_user(void) {
         rgb_matrix_set_color(24, 0xFF, 0x00, 0x00);
         /* Blue for Hue - */
         rgb_matrix_set_color(23, 0x00, 0x00, 0xFF);
-        /* Purple for Saturation + */
-        rgb_matrix_set_color(22, 0x7A, 0x00, 0xFF);
-        /* Pink for Saturation - */
-        rgb_matrix_set_color(21, 0xFF, 0x80, 0xBF);
+        /* Orange for Saturation + */
+        rgb_matrix_set_color(22, 0xFF, 0x80, 0x00);
+        /* Yellow for Saturation - */
+        rgb_matrix_set_color(21, 0xFF, 0xFF, 0x00);
         /* White for Brightness + */
         rgb_matrix_set_color(20, 0xFF, 0xFF, 0xFF);
         /* Nothing for Brightness - :) */
-        /* Orange for Mode + */
-        rgb_matrix_set_color(18, 0xFF, 0x80, 0x00);
-        /* Turquoise for Mode - */
-        rgb_matrix_set_color(17, 0x47, 0x6E, 0x6A);
-        /* Coral for Effect + */
-        rgb_matrix_set_color(16, 0xFF, 0x7C, 0x4D);
-        /* SpringGreen for Effect - */
-        rgb_matrix_set_color(15, 0x00, 0xFF, 0x80);
+        /* Purple for Mode + */
+        rgb_matrix_set_color(18, 0x7A, 0x00, 0xFF);
+        /* Azure for Mode - */
+        rgb_matrix_set_color(17, 0x99, 0xf5, 0xFF);
+        /* Green for Effect + */
+        rgb_matrix_set_color(16, 0x00, 0xFF, 0x00);
+        /* Red for Effect - */
+        rgb_matrix_set_color(15, 0xFF, 0x00, 0x00);
         /* Gold for bottom row effect switches */
         rgb_matrix_set_color(51, 0xFF, 0xD9, 0x00);
         rgb_matrix_set_color(50, 0xFF, 0xD9, 0x00);
