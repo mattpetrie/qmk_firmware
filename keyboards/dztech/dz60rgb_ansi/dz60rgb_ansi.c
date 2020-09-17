@@ -172,10 +172,10 @@ void rgb_matrix_indicators_user(void) {
         rgb_matrix_set_color(38, 0x00, 0xFF, 0xFF);
         rgb_matrix_set_color(39, 0x00, 0xFF, 0xFF);
         /* Set hikl and other mouse scroll buttons to charteuse. */
-        rgb_matrix_set_color(30, 0x80, 0xFF, 0x00);
         rgb_matrix_set_color(31, 0x80, 0xFF, 0x00);
         rgb_matrix_set_color(32, 0x80, 0xFF, 0x00);
         rgb_matrix_set_color(33, 0x80, 0xFF, 0x00);
+        rgb_matrix_set_color(34, 0x80, 0xFF, 0x00);
         rgb_matrix_set_color(24, 0x80, 0xFF, 0x00);
         rgb_matrix_set_color(26, 0x80, 0xFF, 0x00);
         rgb_matrix_set_color(51, 0x80, 0xFF, 0x00);
