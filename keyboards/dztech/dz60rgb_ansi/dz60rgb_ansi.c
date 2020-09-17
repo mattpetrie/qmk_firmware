@@ -108,8 +108,9 @@ void rgb_matrix_indicators_user(void) {
     }
     /* Arrow keys and media controls layer */
     if (layer_state_is(1)) {
-        /* Set `/~ to green/ */
+        /* Set `/~ to green (~ is mapped to tab on this layer) */
         rgb_matrix_set_color(13, 0x00, 0xFF, 0x00);
+        rgb_matrix_set_color(27, 0x00, 0xFF, 0x00);
         /* Set WASD arrow keys to red */
         rgb_matrix_set_color(25, 0xFF, 0x00, 0x00);
         rgb_matrix_set_color(37, 0xFF, 0x00, 0x00);

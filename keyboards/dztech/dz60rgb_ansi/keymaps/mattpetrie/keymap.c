@@ -14,7 +14,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             break;
         case VSCODE_NEW_TERMINAL:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(X_LSHIFT) SS_DOWN(X_LCTRL) "`" SS_UP(X_LSHIFT) SS_UP(X_LCTRL));
+                SEND_STRING(SS_DOWN(X_LCTRL) "~" SS_UP(X_LCTRL));
             }
             break;
     }
