@@ -125,6 +125,8 @@ void rgb_matrix_indicators_user(void) {
         rgb_matrix_set_color(52, 0x00, 0x00, 0xFF);
         /* Set Esc (mapped to lower right corner) to yellow */
         rgb_matrix_set_color(53, 0xFF, 0xFF, 0x00);
+        /* Set the layer mod key to red */
+        rgb_matrix_set_color(55, 0xFF, 0x00, 0x00);
     }
     /* RGB controls layer */
     if (layer_state_is(2)) {
@@ -159,6 +161,8 @@ void rgb_matrix_indicators_user(void) {
         rgb_matrix_set_color(45, 0xFF, 0xD9, 0x00);
         rgb_matrix_set_color(44, 0xFF, 0xD9, 0x00);
         rgb_matrix_set_color(43, 0xFF, 0xD9, 0x00);
+        /* Set the layer mod key to purple */
+        rgb_matrix_set_color(54, 0x7A, 0x00, 0xFF);
     }
     /* Mouse controls layer */
     if (layer_state_is(3)) {
@@ -188,6 +192,8 @@ void rgb_matrix_indicators_user(void) {
         /* Set VSCode shortcuts blue */
         rgb_matrix_set_color(42, 0x00, 0x00, 0xFF);
         rgb_matrix_set_color(43, 0x00, 0x00, 0xFF);
+        /* Set the layer mod key to blue */
+        rgb_matrix_set_color(53, 0x00, 0x00, 0xFF);
     }
 }
 #endif
