@@ -104,13 +104,15 @@ void suspend_wakeup_init_kb(void) {
 __attribute__ ((weak))
 void rgb_matrix_indicators_user(void) {
     if (host_keyboard_led_state().caps_lock) {
-        rgb_matrix_set_color(40, 0xFF, 0xFF, 0xFF);
+        rgb_matrix_set_color(40, 0x00, 0xFF, 0xFF);
     }
     /* Arrow keys and media controls layer */
     if (layer_state_is(1)) {
         /* Set `/~ to green (~ is mapped to tab on this layer) */
         rgb_matrix_set_color(13, 0x00, 0xFF, 0x00);
         rgb_matrix_set_color(27, 0x00, 0xFF, 0x00);
+        /* Set Shruggie (CTRL) to purple */
+        rgb_matrix_set_color(40, 0x7A, 0x00, 0xFF); 
         /* Set WASD arrow keys to red */
         rgb_matrix_set_color(25, 0xFF, 0x00, 0x00);
         rgb_matrix_set_color(37, 0xFF, 0x00, 0x00);
